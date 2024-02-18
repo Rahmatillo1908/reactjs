@@ -1,0 +1,16 @@
+.news {
+    display: flex;
+}
+
+.cards {
+    width: 18%;
+}
+
+.cards img {
+    width: 100%;
+}
+
+.cards:nth-child(3) img {
+    border: 10px solid black;
+
+}

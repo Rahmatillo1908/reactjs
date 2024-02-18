@@ -1,0 +1,146 @@
+.app {
+    display: flex;
+    position: relative;
+    color: white;
+}
+
+.app a {
+    color: white;
+    text-decoration: none;
+}
+
+.app i {
+    cursor: pointer;
+}
+
+.appLeft {
+    position: relative;
+    width: 25%;
+}
+
+.appRight {
+    position: relative;
+    width: 75%;
+    height: 100vh;
+}
+
+nav {
+    width: 25%;
+    background: #222;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.navTop i {
+    font-size: 25px;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+}
+
+.navLinks a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 5px;
+    transition: 0.2s;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.navLinks a:focus {
+    background: #161616;
+}
+
+.navBottom {
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.navBottom i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.navBottom i:hover {
+    transform: scale(1.2);
+    border: 2px solid white;
+}
+
+
+/* header  */
+
+
+.headerTop {
+    width: 100%;
+    background: #222;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.headerRight .search {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 13px;
+}
+
+.search input,
+.search button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+
+.headerCenter {
+    padding: 40px;
+    display: flex;
+}
+
+.circleCharts {
+    text-align: center;
+}
+
+.circleChart {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background: #1f1f1f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle h2 {
+    font-size: 45px;
+}

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+#root {
+    color: #fff;
+    background: #1f1f1f;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.app {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.app button {
+    padding: 6px 12px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: #1f1f1f;
+    transition: 0.2s;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #c23866;
+    color: #fff;
+}
+
+.cardGrid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+img {
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.cards {
+    position: relative;
+    transition: 0.5s;
+}
+
+.cards img {
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    display: block;
+}
+
+.top p:last-child {
+    border-bottom: 3px solid red;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.cards .korinish {
+    transform: rotateY(90deg);
+    position: absolute;
+    transition: all ease-in 0.2s;
+}
+
+.flipped .korinish {
+    transform: rotateY(0deg);
+    animation-delay: 0.2s;
+}
+
+.card .orqasi {
+    transition: all ease-in 0.2s;
+    animation-delay: 0.2s;
+}
+
+.flipped .orqasi {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
