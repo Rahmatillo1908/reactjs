@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom"
-const Navbar = () => {
+const Navbar = ({ setShow, show }) => {
   return (
-    <nav>
-      <div className="navTop">
-        <i className="fa fa-bars"></i>
+    <nav style={{ width: show ? "25%" : "5%" }}>
+      <div className="navTop"  >
+        <i onClick={() => setShow(!show)} className="fa fa-bars"></i>
       </div>
       <div className="navLinks">
         <Link to="/"><i className="fa fa-home"></i><b>Home</b></Link>
         <Link to="/product"><i className="fa fa-cart-arrow-down"></i><b>Products</b></Link>
         <Link to="/about"><i className="fa fa-file"></i><b>About</b></Link>
         <Link to="/contact"><i className="fa fa-phone"></i><b>Contact</b></Link>
+        <Link to="/add"><i className="fa fa-plus"></i><b>Add Product</b></Link>
       </div>
-      <div className="navBottom">
+      <div style={{ opacity: show ? "1" : "0" }} className="navBottom">
         <i className="fa fa-facebook"></i>
         <i className="fa fa-telegram"></i>
         <i className="fa fa-instagram"></i>

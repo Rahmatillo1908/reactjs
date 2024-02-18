@@ -1,13 +1,7 @@
-import { useEffect, useState } from "react"
-import LineCharts from "./LineChart";
+import { LineCharts, BarCharts } from "./LineChart";
 
 const Home = () => {
-  const [circle, setcircle] = useState(0)
-  useEffect(() => {
-    setTimeout(() => {
-      setcircle(circle + 1)
-    }, circle === 85 ? 1000000000 : 50);
-  })
+
 
   return (
     <header>
@@ -26,13 +20,9 @@ const Home = () => {
       <div className="headerCenter">
         <div className="circleCharts">
           <h3>Bozor Iqtisodiyoti</h3>
-          <div className="circleChart" style={{ background: `conic-gradient(dodgerblue ${circle}%,transparent ${circle}%)` }}>
-            <div className="circle">
-              <h2>{circle}%</h2>
-            </div>
-          </div>
+          <BarCharts />
         </div>
-        <LineCharts/>
+        <LineCharts />
       </div>
     </header>
   )
